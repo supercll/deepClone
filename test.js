@@ -1,4 +1,4 @@
-const deepClone = require("./deepClone");
+const { deepClone } = require("./deepClone");
 
 let obj = {
     simple: 1,
@@ -14,4 +14,8 @@ let obj = {
     null: null,
     circle: {},
 };
-obj.circle.self = obj;
+// obj.circle.self = obj;
+
+let obj2 = deepClone(obj);
+
+console.log(obj2);
