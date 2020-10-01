@@ -14,7 +14,7 @@ let obj = {
     null: null,
     circle: {},
 };
-// obj.circle.self = obj;
+obj.circle.self = obj;
 
 let obj2 = deepClone(obj);
 
