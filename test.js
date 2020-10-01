@@ -5,7 +5,7 @@ let obj = {
     obj: { a: 1 },
     arry: [1, 2, 3],
     func: function (x) {
-        console.log(x);
+        return x;
     },
     date: new Date(),
     reg: /^(object|function)$/,
@@ -21,3 +21,5 @@ let obj2 = deepClone(obj);
 console.log(obj2);
 console.log(obj2.arry === obj.arry);
 console.log(obj2.obj === obj.obj);
+
+console.log(obj2.func(1))
