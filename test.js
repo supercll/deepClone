@@ -1,4 +1,6 @@
-const obj = {
+const deepClone = require("./deepClone");
+
+let obj = {
     simple: 1,
     obj: { a: 1 },
     arry: [1, 2, 3],
@@ -10,7 +12,6 @@ const obj = {
     symbol: Symbol("key"),
     undefined: undefined,
     null: null,
-    circle: {
-        self: obj,
-    },
+    circle: {},
 };
+obj.circle.self = obj;
