@@ -19,3 +19,5 @@ let obj = {
 let obj2 = deepClone(obj);
 
 console.log(obj2);
+console.log(obj2.arry === obj.arry);
+console.log(obj2.obj === obj.obj);
